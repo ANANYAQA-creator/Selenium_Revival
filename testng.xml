@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/Black Panther/Desktop/Pramod Testing/Automation_Projects/Selenium_Revival">
+        <classes>
+            <class name="com.rawteananya.ex01_SeleniumBasic.TestSelenium01_DryRun">
+                <methods>
+                    <include name="test_code1"/>
+                </methods>
+
+            </class>
+
+            <class name="com.rawteananya.ex01_SeleniumBasic.TestSelenium01_DryRun">
+                <methods>
+                    <include name="test_code2"/>
+                </methods>
+
+            </class>
+
+            <class name="com.rawteananya.ex01_SeleniumBasic.TestSelenium01_DryRun">
+                <methods>
+                    <include name="OpenBrowser"/>
+                </methods>
+
+            </class>
+        </classes>
+    </test>
+</suite>
