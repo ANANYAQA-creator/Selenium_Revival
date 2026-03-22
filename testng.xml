@@ -2,27 +2,22 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true"
-          name="C:/Users/Black Panther/Desktop/Pramod Testing/Automation_Projects/Selenium_Revival">
+          name="C:/Users/Black Panther/Desktop/Pramod Testing/Automation_Projects/Selenium_Revival/src/test/java/com/rawteananya/SeleniumProject2/TestVWO">
         <classes>
-            <class name="com.rawteananya.ex01_SeleniumBasic.TestSelenium01_DryRun">
+            <class name="com.rawteananya.SeleniumProject2.TestVWO.VWOProject_Chrome">
                 <methods>
-                    <include name="test_code1"/>
+                    <include name="test_VWO_ChromeBrowser"/>
                 </methods>
-
             </class>
-
-            <class name="com.rawteananya.ex01_SeleniumBasic.TestSelenium01_DryRun">
+            <class name="com.rawteananya.SeleniumProject2.TestVWO.VWOProject_Edge">
                 <methods>
-                    <include name="test_code2"/>
+                    <include name="test_VWO_EdgeBrowser"/>
                 </methods>
-
             </class>
-
-            <class name="com.rawteananya.ex01_SeleniumBasic.TestSelenium01_DryRun">
+            <class name="com.rawteananya.SeleniumProject2.TestVWO.VWOProject_Firefox">
                 <methods>
-                    <include name="OpenBrowser"/>
+                    <include name="test_VWO_FirefoxBrowser"/>
                 </methods>
-
             </class>
         </classes>
     </test>
