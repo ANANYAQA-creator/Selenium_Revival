@@ -42,14 +42,48 @@ public class VWOProject_Chrome {
         // Maximize the window
         driver.manage().window().maximize();
 
-        // Enter the input into loginBox
+        // Step 1 - Find the EMAIL ID and enter the Admin@123.com.
+
+        // Step 1 - Find the EMAIL ID and enter the Admin@123.com.
+        // <input open Tag
+        // type="email"
+        // class="text-input W(100%)"
+        // name="username"
+        // id="login-username"
+        // data-qa="hocewoqisi"
+        // data-gtm-form-interact-field-id="0"
+        // > close Tag
+
+
+        // Enter the input into loginBox  : using id here
         WebElement LoginBox = driver.findElement(By.id("login-username"));
         LoginBox.sendKeys("Admin@123.com");
 
-        // Enter the input into password box
 
+        // Step 2 - Find the Password  and enter the 12345.
+
+        // 2. Find the password inputbox and enter the password
+
+        // <input
+        // type="password"
+        // class="text-input W(100%)"
+        // name="password"
+        // id="login-password"
+        // data-qa="jobodapuxe">
+
+
+        // Enter the input into password box
         WebElement PasswordBox =  driver.findElement(By.name("password"));
         PasswordBox.sendKeys("12345");
+
+        // 3. Find the submit button and click on it.
+        // <button
+        // type="submit"
+        // id="js-login-btn"
+        // class="btn btn--positive btn--inverted W(80%) H(48px) Fz(16px)"
+        // onclick="login.login(event)"
+        // data-qa="sibequkica"
+        // >
 
 
         // Click on Sign in button
@@ -63,8 +97,15 @@ public class VWOProject_Chrome {
             e.printStackTrace();
         }
 
-        // Verification of failure message
 
+        // Step 5 - Verify the message error message.
+        // <div
+        // class="notification-box-description"
+        // data-qa="rixawilomi">
+        // Your email, password, IP address or location did not match</div>
+
+
+        // Verification of failure message
         WebElement Verification_Failure_msg = driver.findElement(By.className("notification-box-description"));
         String actual_F_msg = Verification_Failure_msg.getText();
         System.out.println(actual_F_msg);
