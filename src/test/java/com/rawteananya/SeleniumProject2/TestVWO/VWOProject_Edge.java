@@ -10,7 +10,7 @@ package com.rawteananya.SeleniumProject2.TestVWO;
 // Step 5 - Verify the message error message.
 
 
-import com.rawteananya.Selenium_Project1Katalon.utils.Screenshotutils;
+import com.rawteananya.utils.Screenshotutils;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;

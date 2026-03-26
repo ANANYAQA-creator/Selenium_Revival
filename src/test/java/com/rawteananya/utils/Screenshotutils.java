@@ -1,4 +1,4 @@
-package com.rawteananya.Selenium_Project1Katalon.utils;
+package com.rawteananya.utils;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -25,19 +25,16 @@ public class Screenshotutils {
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
         // Create readAble TimeStamp
-
         String timeStamp = new SimpleDateFormat("YYYY-MM-DD_HH-mm-ss").format(new Date());
 
         // Create Filepath
         String filePath = "screenshots/" + testName + "_" + timeStamp + ".png";
-
         // Save file
         try {
             Files.copy(src.toPath(), Paths.get(filePath));
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         return filePath;
     }
 }

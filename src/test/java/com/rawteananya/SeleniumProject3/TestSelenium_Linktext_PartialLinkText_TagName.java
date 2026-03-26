@@ -7,6 +7,7 @@ package com.rawteananya.SeleniumProject3;
 // "Create" button is not clickable and you get an error which is
 // "The email address you have entered is incorrect."
 
+import com.rawteananya.utils.CommontoALL;
 import io.qameta.allure.Description;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,7 +20,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class TestSelenium_Linktext_PartialLinkText_TagName {
+public class TestSelenium_Linktext_PartialLinkText_TagName extends CommontoALL {
 
 
     @Description("Verify the email error message in Start a free trial page.")
@@ -84,7 +85,7 @@ public class TestSelenium_Linktext_PartialLinkText_TagName {
         Assert.assertEquals(error_msg.getText(),"The email address you entered is incorrect.");
 
         // Close the Browser
-        driver.quit();
+        closeBrowser();
 
     }
 }
