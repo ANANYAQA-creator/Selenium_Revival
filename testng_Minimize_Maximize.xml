@@ -4,7 +4,7 @@
     <test verbose="2" preserve-order="true"
           name="C:/Users/Black Panther/Desktop/Pramod Testing/Automation_Projects/Selenium_Revival">
         <classes>
-            <class name="com.rawteananya.ex02_SeleniumBasic.TestSelenium07_Maximize_Minimize">
+            <class name="com.rawteananya.ex02_SeleniumCommands.TestSelenium07_Maximize_Minimize">
                 <methods>
                     <include name="BrowserMaximize"/>
                     <include name="BrowserMinimize"/>

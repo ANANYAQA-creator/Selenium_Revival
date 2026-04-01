@@ -1,4 +1,4 @@
-package com.rawteananya.ex02_SeleniumBasic;
+package com.rawteananya.ex02_SeleniumCommands;
 
 import io.qameta.allure.Description;
 import org.openqa.selenium.WebDriver;

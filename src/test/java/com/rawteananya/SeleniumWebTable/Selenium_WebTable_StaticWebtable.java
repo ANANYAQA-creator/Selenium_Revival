@@ -4,13 +4,9 @@ import com.rawteananya.utils.CommontoALL;
 import com.rawteananya.utils.WaitHelper;
 import io.qameta.allure.Description;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
-import java.sql.SQLOutput;
-
-public class Selenium_WebTables extends CommontoALL {
+public class Selenium_WebTable_StaticWebtable extends CommontoALL {
 
     @Description("Verify the Static WebTable")
     @Test
@@ -56,7 +52,7 @@ public class Selenium_WebTables extends CommontoALL {
 
 
         // Wait thread.sleep
-        WaitHelper waitHelper = new WaitHelper();
+        WaitHelper waitHelper = new WaitHelper(driver);
         waitHelper.thread_sleep();
 
         // close Browser

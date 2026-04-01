@@ -1,4 +1,4 @@
-package com.rawteananya.ex02_SeleniumBasic;
+package com.rawteananya.ex02_SeleniumCommands;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;

@@ -1,12 +1,8 @@
-package com.rawteananya.ex02_SeleniumBasic;
+package com.rawteananya.ex02_SeleniumCommands;
 
-import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.annotations.Test;
 
 public class TestSelenium03_WebdriverHierarchy {
 

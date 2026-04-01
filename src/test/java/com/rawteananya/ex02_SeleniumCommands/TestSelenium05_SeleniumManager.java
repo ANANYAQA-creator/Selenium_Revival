@@ -1,4 +1,4 @@
-package com.rawteananya.ex02_SeleniumBasic;
+package com.rawteananya.ex02_SeleniumCommands;
 
 public class TestSelenium05_SeleniumManager {
 

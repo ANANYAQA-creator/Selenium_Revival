@@ -1,8 +1,6 @@
-package com.rawteananya.ex02_SeleniumBasic;
+package com.rawteananya.ex02_SeleniumCommands;
 
 import io.qameta.allure.Description;
-import net.bytebuddy.build.Plugin;
-import org.apache.logging.log4j.core.net.Priority;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
