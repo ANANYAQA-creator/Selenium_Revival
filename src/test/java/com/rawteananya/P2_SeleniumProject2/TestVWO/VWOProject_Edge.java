@@ -1,4 +1,4 @@
-package com.rawteananya.SeleniumProject2.TestVWO;
+package com.rawteananya.P2_SeleniumProject2.TestVWO;
 
 
 
@@ -18,11 +18,11 @@ import io.qameta.allure.SeverityLevel;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class VWOProject_Firefox {
+public class VWOProject_Edge {
 
 
     WebDriver driver; // Global WebDriver
@@ -33,9 +33,9 @@ public class VWOProject_Firefox {
     @Severity(SeverityLevel.BLOCKER)
     @Test(priority = 1)
 
-    public void test_VWO_FirefoxBrowser() {
+    public void test_VWO_EdgeBrowser() {
 
-        driver = new FirefoxDriver();
+        driver = new EdgeDriver();
         driver.get("https://app.vwo.com/#/login");
 
         // Maximize the window
@@ -74,9 +74,7 @@ public class VWOProject_Firefox {
         String path = Screenshotutils.capture(driver, "Login_Test");
         System.out.println("Screenshot save at : " + path);
 
-
         // Quit the browser
-
         driver.quit();
 
     }

@@ -1,4 +1,4 @@
-package com.rawteananya.SeleniumProject2.TestVWO;
+package com.rawteananya.P2_SeleniumProject2.TestVWO;
 
 
 

@@ -1,4 +1,4 @@
-package com.rawteananya.SeleniumWebTable;
+package com.rawteananya.ex04_SeleniumWebTable;
 
 import com.rawteananya.utils.CommontoALL;
 import io.qameta.allure.Description;

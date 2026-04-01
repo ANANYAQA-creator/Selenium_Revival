@@ -1,4 +1,4 @@
-package com.rawteananya.Selenium_Project1Katalon;
+package com.rawteananya.P1_Selenium_Project1Katalon;
 import io.qameta.allure.Description;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

@@ -1,4 +1,4 @@
-package com.rawteananya.Selenium_SVG_elements;
+package com.rawteananya.ex05_Selenium_SVG_elements;
 
 import com.rawteananya.utils.CommontoALL;
 import com.rawteananya.utils.WaitHelper;

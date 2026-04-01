@@ -1,4 +1,4 @@
-package com.rawteananya.OrangeHRM_Webtable_Dynamic_Webtable;
+package com.rawteananya.ex04_SeleniumWebTable.OrangeHRM_Webtable_Dynamic_Webtable;
 
 import com.rawteananya.utils.CommontoALL;
 import com.rawteananya.utils.WaitHelper;

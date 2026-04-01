@@ -1,4 +1,4 @@
-package com.rawteananya.SeleniumProject3;
+package com.rawteananya.P3_SeleniumProject3_Linktext_PartialLink_InvokeBrowser;
 
 // You need to basically go to app.vwo.com,
 // then click on the "Start a Trial" button.

@@ -1,18 +1,11 @@
-package com.rawteananya.SeleniumProject3;
+package com.rawteananya.P3_SeleniumProject3_Linktext_PartialLink_InvokeBrowser;
 
 import com.rawteananya.utils.CommontoALL;
-import io.qameta.allure.Description;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
-
-import java.time.Duration;
 
 public class InvokeChromeBrowser extends CommontoALL {
 
