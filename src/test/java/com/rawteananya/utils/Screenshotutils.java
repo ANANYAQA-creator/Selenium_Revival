@@ -25,7 +25,7 @@ public class Screenshotutils {
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
         // Create readAble TimeStamp
-        String timeStamp = new SimpleDateFormat("YYYY-MM-DD_HH-mm-ss").format(new Date());
+        String timeStamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
 
         // Create Filepath
         String filePath = "screenshots/" + testName + "_" + timeStamp + ".png";
@@ -33,7 +33,7 @@ public class Screenshotutils {
         try {
             Files.copy(src.toPath(), Paths.get(filePath));
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new RuntimeException("Failed to capture screenshot: " + e.getMessage());
         }
         return filePath;
     }

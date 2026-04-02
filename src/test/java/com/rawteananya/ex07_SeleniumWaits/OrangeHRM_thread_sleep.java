@@ -1,6 +1,6 @@
 package com.rawteananya.ex07_SeleniumWaits;
 
-import com.rawteananya.utils.CommontoALL;
+import com.rawteananya.utils.CommonToAll;
 import com.rawteananya.utils.WaitHelper;
 import io.qameta.allure.Description;
 import org.openqa.selenium.By;
@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class OrangeHRM_thread_sleep extends CommontoALL {
+public class OrangeHRM_thread_sleep extends CommonToAll {
 
     @Description("Verify the Orange HRM login page")
     @Test(priority = 1)

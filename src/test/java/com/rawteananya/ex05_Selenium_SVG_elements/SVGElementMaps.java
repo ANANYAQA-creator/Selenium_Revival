@@ -1,6 +1,6 @@
 package com.rawteananya.ex05_Selenium_SVG_elements;
 
-import com.rawteananya.utils.CommontoALL;
+import com.rawteananya.utils.CommonToAll;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -9,7 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import java.util.List;
 import java.util.Objects;
 
-public class SVGElementMaps extends CommontoALL {
+public class SVGElementMaps extends CommonToAll {
 
     @Test
     public void svg_maps(){

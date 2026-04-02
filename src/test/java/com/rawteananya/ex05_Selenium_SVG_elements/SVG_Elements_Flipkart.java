@@ -1,13 +1,13 @@
 package com.rawteananya.ex05_Selenium_SVG_elements;
 
-import com.rawteananya.utils.CommontoALL;
+import com.rawteananya.utils.CommonToAll;
 import com.rawteananya.utils.WaitHelper;
 import io.qameta.allure.Description;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-public class SVG_Elements_Flipkart extends CommontoALL {
+public class SVG_Elements_Flipkart extends CommonToAll {
 
     @Description("Learning SVG Elements")
     @Test

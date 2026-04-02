@@ -7,7 +7,7 @@ package com.rawteananya.P3_SeleniumProject3_Linktext_PartialLink_InvokeBrowser;
 // "Create" button is not clickable and you get an error which is
 // "The email address you have entered is incorrect."
 
-import com.rawteananya.utils.CommontoALL;
+import com.rawteananya.utils.CommonToAll;
 import io.qameta.allure.Description;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class TestSelenium_Linktext_PartialLinkText_TagName extends CommontoALL {
+public class TestSelenium_Linktext_PartialLinkText_TagName extends CommonToAll {
 
 
     @Description("Verify the email error message in Start a free trial page.")

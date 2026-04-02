@@ -1,6 +1,6 @@
 package com.rawteananya.ex04_SeleniumWebTable;
 
-import com.rawteananya.utils.CommontoALL;
+import com.rawteananya.utils.CommonToAll;
 import io.qameta.allure.Description;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class Selenium_Dynamic_Webtable extends CommontoALL {
+public class Selenium_Dynamic_Webtable extends CommonToAll {
 
 
     @Description("Verify the dynamic webtable")

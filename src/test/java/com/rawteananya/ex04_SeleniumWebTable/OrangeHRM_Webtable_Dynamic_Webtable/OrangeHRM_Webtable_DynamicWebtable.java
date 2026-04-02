@@ -1,6 +1,6 @@
 package com.rawteananya.ex04_SeleniumWebTable.OrangeHRM_Webtable_Dynamic_Webtable;
 
-import com.rawteananya.utils.CommontoALL;
+import com.rawteananya.utils.CommonToAll;
 import com.rawteananya.utils.WaitHelper;
 import io.qameta.allure.Description;
 import org.openqa.selenium.By;
@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class OrangeHRM_Webtable_DynamicWebtable extends CommontoALL {
+public class OrangeHRM_Webtable_DynamicWebtable extends CommonToAll {
 
     @Description("learning WebTable")
     @Test

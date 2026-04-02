@@ -1,13 +1,13 @@
 package com.rawteananya.P3_SeleniumProject3_Linktext_PartialLink_InvokeBrowser;
 
-import com.rawteananya.utils.CommontoALL;
+import com.rawteananya.utils.CommonToAll;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
-public class InvokeChromeBrowser extends CommontoALL {
+public class InvokeChromeBrowser extends CommonToAll {
 
     @Test
     public void OpenBrowser() {

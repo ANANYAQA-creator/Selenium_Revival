@@ -1,6 +1,6 @@
 package com.rawteananya.ex07_SeleniumWaits;
 
-import com.rawteananya.utils.CommontoALL;
+import com.rawteananya.utils.CommonToAll;
 import com.rawteananya.utils.WaitHelper;
 import io.qameta.allure.Description;
 import org.openqa.selenium.By;
@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class KatalonProject extends CommontoALL {
+public class katalonProject_Explicit_wait extends CommonToAll {
 
     @Description("Verify the texy of Make Appointment in KATALON website" )
     @Test
@@ -36,9 +36,10 @@ public class KatalonProject extends CommontoALL {
 
         // Validation of Make Appointment text
 
-        WebElement makeAppointment_text = waitHelper.waitforElementVisible(By.cssSelector("//h2[text()=\"Make Appointment\"]"));
+        WebElement makeAppointment_text = waitHelper.waitforElementVisible(By.xpath("//h2[text()=\"Make Appointment\"]"));
         Assert.assertEquals(makeAppointment_text.getText(),"Make Appointment");
         Assert.assertTrue(makeAppointment_text.isDisplayed());
+        System.out.println(makeAppointment_text.getText());
 
         quitBrowser();
     }
