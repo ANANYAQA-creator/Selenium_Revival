@@ -28,7 +28,7 @@ public class OrangeHRM_thread_sleep extends CommonToAll {
         WebElement login_button = waitHelper.waitforElementClickable(By.xpath("//button[normalize-space()=\"Login\"]"));
         login_button.click();
 
-        waitHelper.thread_sleep();
+        waitHelper.thread_sleep(5000);
 
         WebElement PIM_text = waitHelper.waitforElementVisible(By.xpath("//h6[normalize-space()=\"PIM\"]"));
         Assert.assertEquals(PIM_text.getText(),"PIM");

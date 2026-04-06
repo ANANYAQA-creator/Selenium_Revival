@@ -1,8 +1,11 @@
 package com.rawteananya.utils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -33,19 +36,49 @@ public class WaitHelper {
         }
 
 
+
+
         // Implicit Wait
 
-    public void implicit_wait (int seconds){
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(seconds));
+    public void implicit_wait (int time){
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(time));
     }
 
     // thread sleep
-    public void thread_sleep(){
+    public void thread_sleep(int time) {
 
         try {
-            Thread.sleep(5000);
+            Thread.sleep(time);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
     }
+
+        // Fluent wait
+
+        public WebElement fluentwaitForElement(By locator, int timeout,int pollingTime){
+
+        Wait<WebDriver> wait = new FluentWait<>(driver)
+                    .withTimeout(Duration.ofSeconds(timeout))
+                    .pollingEvery(Duration.ofSeconds(pollingTime))
+                    .ignoring(NoSuchElementException.class);
+
+        return wait.until(driver ->driver.findElement(locator));
+
+    }
+
+    // Fluent Wait for visibility of Element
+
+    public WebElement fluentWaitForVisibility(By locator,int timeout,int pollingTime){
+
+        Wait<WebDriver> wait = new FluentWait<> (driver)
+                .withTimeout(Duration.ofSeconds(timeout))
+                .pollingEvery(Duration.ofSeconds(pollingTime))
+                .ignoring(NoSuchElementException.class);
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+
+    }
+
+
+
 }

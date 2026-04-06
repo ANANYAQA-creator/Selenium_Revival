@@ -53,7 +53,7 @@ public class Selenium_WebTable_StaticWebtable extends CommonToAll {
 
         // Wait thread.sleep
         WaitHelper waitHelper = new WaitHelper(driver);
-        waitHelper.thread_sleep();
+        waitHelper.thread_sleep(5000);
 
         // close Browser
         closeBrowser();

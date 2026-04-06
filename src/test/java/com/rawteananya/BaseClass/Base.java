@@ -10,7 +10,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Base {
 
 
-    protected WebDriver driver;
+    public WebDriver driver;
 
     // Common method for all browser
 
@@ -19,18 +19,15 @@ public class Base {
         switch (browser.toLowerCase()) {
 
             case "chrome":
-              WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
                 break;
 
 
             case "edge":
-                WebDriverManager.edgedriver().setup();
                 driver = new EdgeDriver();
                 break;
 
             case "firefox":
-                WebDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();
                 break;
 

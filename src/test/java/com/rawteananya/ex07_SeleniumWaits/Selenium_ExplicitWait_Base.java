@@ -11,7 +11,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.annotations.Listeners;
+import com.rawteananya.Listeners.TestListeners;
 
+
+@Listeners(TestListeners.class)
 public class Selenium_ExplicitWait_Base extends Base {
 
 // **Practice Selenium Project #2**
@@ -90,9 +94,7 @@ public class Selenium_ExplicitWait_Base extends Base {
             System.out.println(actual_F_msg);
             Assert.assertEquals(actual_F_msg,"Your email, password, IP address or location did not match");
 
-            // Take Screenshot
-            String path = Screenshotutils.capture(driver, "test_VWO_Explicit_Waits");
-            System.out.println("Screenshot save at : " + path);
+
 
             // Quit the browser
            quitbrowser_new();
