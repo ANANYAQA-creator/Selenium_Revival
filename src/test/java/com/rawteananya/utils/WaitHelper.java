@@ -37,7 +37,6 @@ public class WaitHelper {
 
 
 
-
         // Implicit Wait
 
     public void implicit_wait (int time){
