@@ -12,12 +12,8 @@ public class Selenium_JavaScriptAlert_sendKeys extends CommonToAll {
 
     @Test
     public void jsPrompt(){
-
-
         // JS Prompt = //button[text()='Click for JS Prompt']
         // Result = //p[@id='result']
-
-
         driver = chromeBrowser("https://the-internet.herokuapp.com/javascript_alerts");
 
         WebElement jsPrompt = driver.findElement(By.xpath("//button[text()='Click for JS Prompt']"));
@@ -25,9 +21,7 @@ public class Selenium_JavaScriptAlert_sendKeys extends CommonToAll {
         Alert jsPromptAlert = driver.switchTo().alert();
 
        // jsPromptAlert.sendKeys("I am Shiv");
-
       //  using dynamic test
-
         String name = "I am shiv" ;
         jsPromptAlert.sendKeys(name);
         jsPromptAlert.accept();
@@ -38,5 +32,4 @@ public class Selenium_JavaScriptAlert_sendKeys extends CommonToAll {
      //   Assert.assertEquals(result_msg.getText(),"You entered: I am Shiv");
         Assert.assertEquals(result_msg.getText(),"You entered: "+ name);
     }
-
 }

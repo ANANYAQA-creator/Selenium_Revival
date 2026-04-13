@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 public class WaitHelper {
 
@@ -35,7 +36,9 @@ public class WaitHelper {
             return explicit_wait.until(ExpectedConditions.elementToBeClickable(locator));
         }
 
-
+        public List<WebElement> visibileAllElement (By locator){
+        return explicit_wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
+        }
 
         // Implicit Wait
 
